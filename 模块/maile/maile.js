@@ -10,12 +10,12 @@ function send(from, to, content) {
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
-            host: "smtp.qq.com",
+            host: "smtp.qq.com",  //服务器 在lib/well-kown/services.json
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {
                 user: from, // generated ethereal user
-                pass: "alpchxevabaefdhi" // generated ethereal password
+                pass: "alpchxevabaefdhi" // generated ethereal password  SMTP服务
             }
         });
 
